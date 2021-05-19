@@ -26,13 +26,7 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
-  starWarsArr.sort((a, b) => {
-    if (a.height > b.height) {
-      return b.height - a.height;
-    }
-    return false;
-  })
-  // console.log(starWarsArr)
+  return starWarsArr.sort((a, b) => { return b.height - a.height });
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,14 +69,14 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
-  let big = str.split('');
-  for (let i = 0; i < 7; i++) {
-    big.join('');
-    result.push(str);
-    big.split('');
-    big.shift(0);
+  let temp = str.split('');
+  let tempNum = temp.length;
+  for (let j = 0; j < tempNum + 1; j++) {
+    temp = str.split('');
+    temp.splice(0, j);
+    temp = temp.join('');
+    result.push(temp);
   }
-  console.log(result);
   return result;
 };
 
@@ -96,6 +90,8 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+  let localArray = arr.split('');
+  return localArray;
 };
 
 
@@ -143,6 +139,13 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  let temp;
+  result = recipe.ingredients.map(item => {
+    temp = item.split(' ');
+    temp = temp.slice(2);
+    temp = temp.join(' ');
+    return temp;
+  });
   return result;
 };
 
