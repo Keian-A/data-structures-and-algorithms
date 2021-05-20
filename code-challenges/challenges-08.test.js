@@ -1,5 +1,7 @@
 'use strict';
 
+const { SearchSource } = require("@jest/core");
+
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 1 - Review
@@ -112,8 +114,12 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
-  let localArray = /\b[A-Z].*?\b/g.search(str);
-  console.log(localArray);
+  const localArray = [];
+  let matched = str.matchAll(/\b[A-Z].*?\b/g);
+  matched = Array.from(matched);
+  matched.forEach(item => {
+    localArray.push(item[0]);
+  });
   return localArray;
 };
 
@@ -125,6 +131,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  const localArray = [];
+  let regex = /^[A-J][a-z]*/;
+  arr.forEach(item => {
+    if (regex.test(item)) {
+      localArray.push(item);
+    }
+  })
+  return localArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
