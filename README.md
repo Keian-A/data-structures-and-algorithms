@@ -17,3 +17,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ### Table of Contents
 
 - [Array reverse](./javascript/code-challenges/array-reverse/README.md)
+- [Array shift](./javascript/code-challenges/array-shift/README.md)
