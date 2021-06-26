@@ -21,3 +21,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [Array binary search](./javascript/code-challenges/array-binary-search/README.md)
 - [Linked list](./javascript/code-challenges/linkedList/linked-list.js)
 - [Linked list-II](./javascript/code-challenges/LinkedList/README.md)
+- [Stack-and-Queue](./javascript/code-challenges/stack-and-queue/README.md)
