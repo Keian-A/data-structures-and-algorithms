@@ -118,9 +118,10 @@ class Queue {
 }
 
 // let queue = new Queue();
-
 // queue.enqueue(5);
 // queue.enqueue(10);
 // queue.enqueue(15);
 // queue.enqueue(20);
 // queue.traverse();
+
+module.exports.Stack = Stack;
