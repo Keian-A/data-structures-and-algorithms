@@ -125,3 +125,4 @@ class Queue {
 // queue.traverse();
 
 module.exports.Stack = Stack;
+module.exports.Queue = Queue;
