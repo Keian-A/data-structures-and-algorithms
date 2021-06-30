@@ -24,3 +24,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [Stack-and-Queue](./javascript/code-challenges/stack-and-queue/README.md)
 - [Stack-Queue-Pseudo](./javascript/code-challenges/stack-queue-pseudo/README.md)
 - [Stack-Queue-Animal-Shelter](./javascript/code-challenges/stack-queue-animal-shelter/README.md)
+- [Stack-Queue-Brackets](./javascript/code-challenges/stack-queue-brackets/README.md)
