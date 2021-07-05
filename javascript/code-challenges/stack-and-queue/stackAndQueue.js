@@ -55,6 +55,7 @@ class Stack {
 // stack.push(10);
 // stack.push(15);
 // stack.traverse();
+// console.log(JSON.stringify(stack));
 
 // // returns false because stack is not empty
 // let response = stack.isEmpty();
