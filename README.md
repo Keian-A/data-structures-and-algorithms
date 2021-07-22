@@ -27,3 +27,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [Stack-Queue-Brackets](./javascript/code-challenges/stack-queue-brackets/README.md)
 - [Tree-Max](./javascript/code-challenges/tree-max/README.md)
 - [InsertionSort](./javascript/code-challenges/insertion-sort/README.md)
+- [MergeSort](./javascript/code-challenges/merge-sort/README.md)
+- [QuickSort](./javascript/code-challenges/quick-sort/README.md)
