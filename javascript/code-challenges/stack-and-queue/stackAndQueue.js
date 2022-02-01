@@ -125,5 +125,4 @@ class Queue {
 // queue.enqueue(20);
 // queue.traverse();
 
-module.exports.Stack = Stack;
-module.exports.Queue = Queue;
+module.exports = { Stack, Queue }
