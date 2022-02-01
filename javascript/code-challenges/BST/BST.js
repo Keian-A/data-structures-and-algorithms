@@ -41,3 +41,5 @@ class BinarySearchTree {
     return false;
   }
 }
+
+module.exports = { Node, BinarySearchTree }
