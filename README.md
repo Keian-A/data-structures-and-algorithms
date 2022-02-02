@@ -29,4 +29,6 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [MergeSort](./javascript/code-challenges/merge-sort/README.md)
 - [QuickSort](./javascript/code-challenges/quick-sort/README.md)
 - [Binary Tree & BST](./javascript/code-challenges/BST/README.md)
+- [K-ary Tree](./javascript/code-challenges/k-ary/README.md)
 - [Breadth First Search](./javascript/code-challenges/breadth-first/README.md)
+- [Tree Fizz Buzz](./javascript/code-challenges/tree-fizz-buzz/README.md)
