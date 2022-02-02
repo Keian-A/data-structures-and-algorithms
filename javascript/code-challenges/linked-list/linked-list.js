@@ -7,28 +7,33 @@ class Node {
   }
 }
 
-class LinkedList {
+module.exports = class LinkedList {
   constructor() {
     this.head = null;
   }
 
-  traverse(callback) {
+  traverse(arr) {
     let current = this.head;
     while (current !== null) {
-      console.log(current.value);
+      arr.push(current.value);
       current = current.next;
     }
+    return arr;
   }
 
   insert(value) {
-    let current = this.head;
-    let previous = null;
-    while (current !== null) {
-      previous = current;
-      current = current.next;
+    let node = new Node(value);
+    if (this.head === null) {
+      this.head = node;
+    } else {
+      let current = this.head;
+      let previous;
+      while (current !== null) {
+        previous = current;
+        current = current.next;
+      }
+      previous.next = node;
     }
-    let newNode = new Node(value);
-    previous.next = newNode;
   }
 
   includes(value) {
@@ -58,11 +63,3 @@ class LinkedList {
     return resultStr;
   }
 }
-
-const list = new LinkedList();
-const A = new Node('First Node of Linked List');
-list.head = A;
-list.insert(10);
-console.log(JSON.stringify(list));
-list.traverse();
-list.toString();

@@ -1,7 +1,5 @@
 'use strict';
 
-const { it } = require('eslint/lib/rule-tester/rule-tester');
-// Require our linked list implementation
 const BinarySearchTree = require('../breadth-first.js');
 
 describe('Should create BST and traverse using breadth-first search', () => {
