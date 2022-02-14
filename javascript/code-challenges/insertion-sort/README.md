@@ -36,22 +36,7 @@ Outside of the while loop:
 
 Sets `arr[j + 1] = temp` - which essentially sets the next value of the array to the current position's value.
 
-## Code in JavaScript
-
-```javascript
-function insertionSort(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    let j = i - 1;
-    let temp = arr[i];
-    while (j >= 0 && temp < arr[j]) {
-      arr[j + 1] = arr[j];
-      j = j - 1;
-    }
-    arr[j + 1] = temp;
-  }
-  return arr;
-}
-```
+Code [Here](./insertSort.js)
 
 ## Challenge description
-The purpose of this pseudocode & code is to sort an array of integers by smallest number to largest number. For example: an array of values `[8, 4, 23, 42, 16, 15]` sorted through this algorithm will return: `[4, 8, 15, 16, 23, 42]`.
+The purpose of this pseudocode & code is to sort an array of integers by smallest number to largest number. For example: an array of values `[8, 4, 23, 42, 16, 15]` sorted through this algorithm will return: `[4, 8, 15, 16, 23, 42]`. The big O of time is O(n^2) since there is a while loop within the for loop, so we are looping through the array for each iteration of the for loop. The big O of space is O(1) since the algorithm changes the array in-place, does not make any variables that changes based on any factors.
