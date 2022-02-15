@@ -31,36 +31,4 @@ Line-by-line explanation
 ## Explanation
 The purpose of this code is to sort an array from smallest to biggest values. This method cuts the big O of time to n/2 due to the method cutting the array in half, sorting both of the sides, then merging them together.
 
-## Code
-
-```JavaScript
-function Mergesort(arr) {
-  let n = arr.length;
-  if (n > 1) {
-    let mid = n/2;
-    let left = arr[0...mid];
-    let right = arr[mid+1...n];
-    Mergesort(left);
-    Mergesort(right);
-    while (i < left.length && j < right.length) {
-      if (left[i] <= right[j]) {
-        arr[k] = left[i];
-        i++;
-      } else {
-        arr[k] = right[j];
-        j++;
-      }
-      k++;
-    }
-    if (i = left.length) {
-      for (let var1 = 0; var1 < left.length; var1++) {
-      arr.push(left[var1]);
-      }
-    } else {
-      for (let var1 = 0; var1 < right.length; var1++) {
-      arr.push(right[var1]);
-      }
-    }
-  }
-}
-```
+[Code](./merge-sort.js);
