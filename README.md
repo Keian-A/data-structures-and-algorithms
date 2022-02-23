@@ -18,3 +18,4 @@
 - [InsertionSort](./javascript/code-challenges/insertion-sort/README.md)
 - [Hash table](./javascript/code-challenges/hash-table/README.md)
 - [First Repeated Word With Hash Table](./javascript/code-challenges/hashmap-repeated-word/README.md)
+- [Tree Intersection](./javascript/code-challenges/tree-intersection/README.md)
