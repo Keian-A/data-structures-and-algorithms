@@ -25,6 +25,10 @@ module.exports = class HashTable {
         }
     }
 
+    values() {
+        return Object.values(this.obj);
+    }
+
     keys() {
         return Object.keys(this.obj);
     }
