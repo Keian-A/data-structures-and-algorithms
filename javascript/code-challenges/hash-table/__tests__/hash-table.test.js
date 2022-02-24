@@ -1,5 +1,6 @@
 'use strict';
 
+const { it } = require('eslint/lib/rule-tester/rule-tester');
 const HashTable = require('../hash-table.js');
 
 describe('Tests HashTable class and containing methods', () => {
@@ -35,6 +36,13 @@ describe('Tests HashTable class and containing methods', () => {
         let result2 = obj.contains('testKeyNotInObject');
         expect(result1).toEqual(true);
         expect(result2).toEqual(false);
+    });
+
+    it('Tests values method', () => {
+        const obj = new HashTable();
+        obj.set('testKey', 'testVal');
+        let result = obj.values();
+        expect(result).toEqual(['testVal']);
     });
 
     it('Tests keys method', () => {
