@@ -32,10 +32,10 @@ describe('Testing Graph class with methods', () => {
         graph.add(2);
         let result = graph.getNodes();
         graph.addEdge(result[0], result[1], 0.5);
-        result = graph.getNeighbors();
-        expect(result[0][0].v1).toEqual(expect.anything());
-        expect(result[0][0].v2).toEqual(expect.anything());
-        expect(result[0][0].weight).toEqual(expect.anything());
+        result = graph.getNeighbors(result[0]);
+        expect(result[0].v1).toEqual(expect.anything());
+        expect(result[0].v2).toEqual(expect.anything());
+        expect(result[0].weight).toEqual(expect.anything());
     });
 
     it('Neighbors are returned with the weight between nodes included', () => {
@@ -44,8 +44,8 @@ describe('Testing Graph class with methods', () => {
         graph.add(2);
         let result = graph.getNodes();
         graph.addEdge(result[0], result[1], 0.5);
-        result = graph.getNeighbors();
-        expect(result[0][0].weight).toEqual(0.5);
+        result = graph.getNeighbors(result[0]);
+        expect(result[0].weight).toEqual(0.5);
     });
 
     it('The proper size is returned, representing the number of nodes in the graph', () => {

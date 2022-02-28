@@ -28,13 +28,9 @@ class Graph {
         this._adjacencyList.set(v2, [...existingEdges2, edge]);
     }
 
-    getNeighbors() {
-        let sentBack = [];
-        let result = this.getNodes();
-        for (let ii = 0; ii < result.length; ii++) {
-            sentBack.push(this._adjacencyList.get(result[ii]));
-        }
-        return sentBack;
+    getNeighbors(node) {
+        let result = this._adjacencyList.get(node);
+        return result;
     }
 }
 
