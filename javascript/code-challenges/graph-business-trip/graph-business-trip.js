@@ -26,11 +26,6 @@ class Graph {
         this._adjacencyList.set(v2, [...existingEdges2, edge]);
     }
 
-    getNeighbors(node) {
-        let result = this._adjacencyList.get(node);
-        return result;
-    }
-
     graphBusinessTrip(arr) {
         if (arr.length === 1 || arr.length === 0) return { valid: false, cost: '$0' }
         let resultVar = 0;
