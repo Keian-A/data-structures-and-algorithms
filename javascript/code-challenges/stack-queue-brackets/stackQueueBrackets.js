@@ -2,7 +2,7 @@
 
 const { Stack } = require('../stack-and-queue/stackAndQueue.js');
 
-class BracketStack {
+module.exports = class BracketStack {
   constructor() {
     this.front = null;
     this.rear = null;
@@ -41,7 +41,3 @@ class BracketStack {
     }
   }
 }
-
-let bs = new BracketStack();
-let response = bs.bracketChecker('{(})');
-console.log(response);
